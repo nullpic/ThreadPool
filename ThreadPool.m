@@ -96,8 +96,8 @@ static ThreadPool *instance;
     
     // turn off timer
     if ([_poolQueue count] + [_poolExecute count] == 0) {
-        [timer invalidate];
-        timer = nil;
+        [_timer invalidate];
+        _timer = nil;
     }
 }
 
