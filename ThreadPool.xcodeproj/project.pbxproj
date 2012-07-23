@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2181F6D515BBE1CD00EF78D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6D415BBE1CD00EF78D2 /* UIKit.framework */; };
+		2181F6D715BBE1CD00EF78D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6D615BBE1CD00EF78D2 /* Foundation.framework */; };
+		2181F6D915BBE1CD00EF78D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6D815BBE1CD00EF78D2 /* CoreGraphics.framework */; };
+		2181F6DF15BBE1CD00EF78D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2181F6DD15BBE1CD00EF78D2 /* InfoPlist.strings */; };
+		2181F6E115BBE1CD00EF78D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181F6E015BBE1CD00EF78D2 /* main.m */; };
+		2181F6E515BBE1CD00EF78D2 /* ThreadPoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181F6E415BBE1CD00EF78D2 /* ThreadPoolAppDelegate.m */; };
+		2181F6E815BBE1CD00EF78D2 /* ThreadPoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181F6E715BBE1CD00EF78D2 /* ThreadPoolViewController.m */; };
+		2181F6EB15BBE1CD00EF78D2 /* ThreadPoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2181F6E915BBE1CD00EF78D2 /* ThreadPoolViewController.xib */; };
+		2181F6F315BBE1CE00EF78D2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6F215BBE1CE00EF78D2 /* SenTestingKit.framework */; };
+		2181F6F415BBE1CE00EF78D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6D415BBE1CD00EF78D2 /* UIKit.framework */; };
+		2181F6F515BBE1CE00EF78D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181F6D615BBE1CD00EF78D2 /* Foundation.framework */; };
+		2181F6FD15BBE1CE00EF78D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2181F6FB15BBE1CE00EF78D2 /* InfoPlist.strings */; };
+		2181F70015BBE1CE00EF78D2 /* ThreadPoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181F6FF15BBE1CE00EF78D2 /* ThreadPoolTests.m */; };
+		2181F71115BBE34400EF78D2 /* ThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181F71015BBE34400EF78D2 /* ThreadPool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2181F6F615BBE1CE00EF78D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2181F6C715BBE1CD00EF78D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2181F6CF15BBE1CD00EF78D2;
+			remoteInfo = ThreadPool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2181F6D015BBE1CD00EF78D2 /* ThreadPool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadPool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2181F6D415BBE1CD00EF78D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2181F6D615BBE1CD00EF78D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2181F6D815BBE1CD00EF78D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2181F6DC15BBE1CD00EF78D2 /* ThreadPool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThreadPool-Info.plist"; sourceTree = "<group>"; };
+		2181F6DE15BBE1CD00EF78D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2181F6E015BBE1CD00EF78D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2181F6E215BBE1CD00EF78D2 /* ThreadPool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThreadPool-Prefix.pch"; sourceTree = "<group>"; };
+		2181F6E315BBE1CD00EF78D2 /* ThreadPoolAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPoolAppDelegate.h; sourceTree = "<group>"; };
+		2181F6E415BBE1CD00EF78D2 /* ThreadPoolAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPoolAppDelegate.m; sourceTree = "<group>"; };
+		2181F6E615BBE1CD00EF78D2 /* ThreadPoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPoolViewController.h; sourceTree = "<group>"; };
+		2181F6E715BBE1CD00EF78D2 /* ThreadPoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPoolViewController.m; sourceTree = "<group>"; };
+		2181F6EA15BBE1CD00EF78D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ThreadPoolViewController.xib; sourceTree = "<group>"; };
+		2181F6F115BBE1CE00EF78D2 /* ThreadPoolTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadPoolTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2181F6F215BBE1CE00EF78D2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2181F6FA15BBE1CE00EF78D2 /* ThreadPoolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThreadPoolTests-Info.plist"; sourceTree = "<group>"; };
+		2181F6FC15BBE1CE00EF78D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2181F6FE15BBE1CE00EF78D2 /* ThreadPoolTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPoolTests.h; sourceTree = "<group>"; };
+		2181F6FF15BBE1CE00EF78D2 /* ThreadPoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPoolTests.m; sourceTree = "<group>"; };
+		2181F70F15BBE34400EF78D2 /* ThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadPool.h; sourceTree = "<group>"; };
+		2181F71015BBE34400EF78D2 /* ThreadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadPool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2181F6CD15BBE1CD00EF78D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F6D515BBE1CD00EF78D2 /* UIKit.framework in Frameworks */,
+				2181F6D715BBE1CD00EF78D2 /* Foundation.framework in Frameworks */,
+				2181F6D915BBE1CD00EF78D2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2181F6ED15BBE1CE00EF78D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F6F315BBE1CE00EF78D2 /* SenTestingKit.framework in Frameworks */,
+				2181F6F415BBE1CE00EF78D2 /* UIKit.framework in Frameworks */,
+				2181F6F515BBE1CE00EF78D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2181F6C515BBE1CD00EF78D2 = {
+			isa = PBXGroup;
+			children = (
+				2181F70D15BBE33000EF78D2 /* Class */,
+				2181F6DA15BBE1CD00EF78D2 /* ThreadPool */,
+				2181F6F815BBE1CE00EF78D2 /* ThreadPoolTests */,
+				2181F6D315BBE1CD00EF78D2 /* Frameworks */,
+				2181F6D115BBE1CD00EF78D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2181F6D115BBE1CD00EF78D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6D015BBE1CD00EF78D2 /* ThreadPool.app */,
+				2181F6F115BBE1CE00EF78D2 /* ThreadPoolTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2181F6D315BBE1CD00EF78D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6D415BBE1CD00EF78D2 /* UIKit.framework */,
+				2181F6D615BBE1CD00EF78D2 /* Foundation.framework */,
+				2181F6D815BBE1CD00EF78D2 /* CoreGraphics.framework */,
+				2181F6F215BBE1CE00EF78D2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2181F6DA15BBE1CD00EF78D2 /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6E315BBE1CD00EF78D2 /* ThreadPoolAppDelegate.h */,
+				2181F6E415BBE1CD00EF78D2 /* ThreadPoolAppDelegate.m */,
+				2181F6E615BBE1CD00EF78D2 /* ThreadPoolViewController.h */,
+				2181F6E715BBE1CD00EF78D2 /* ThreadPoolViewController.m */,
+				2181F6E915BBE1CD00EF78D2 /* ThreadPoolViewController.xib */,
+				2181F6DB15BBE1CD00EF78D2 /* Supporting Files */,
+			);
+			path = ThreadPool;
+			sourceTree = "<group>";
+		};
+		2181F6DB15BBE1CD00EF78D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6DC15BBE1CD00EF78D2 /* ThreadPool-Info.plist */,
+				2181F6DD15BBE1CD00EF78D2 /* InfoPlist.strings */,
+				2181F6E015BBE1CD00EF78D2 /* main.m */,
+				2181F6E215BBE1CD00EF78D2 /* ThreadPool-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2181F6F815BBE1CE00EF78D2 /* ThreadPoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6FE15BBE1CE00EF78D2 /* ThreadPoolTests.h */,
+				2181F6FF15BBE1CE00EF78D2 /* ThreadPoolTests.m */,
+				2181F6F915BBE1CE00EF78D2 /* Supporting Files */,
+			);
+			path = ThreadPoolTests;
+			sourceTree = "<group>";
+		};
+		2181F6F915BBE1CE00EF78D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2181F6FA15BBE1CE00EF78D2 /* ThreadPoolTests-Info.plist */,
+				2181F6FB15BBE1CE00EF78D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2181F70D15BBE33000EF78D2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2181F70F15BBE34400EF78D2 /* ThreadPool.h */,
+				2181F71015BBE34400EF78D2 /* ThreadPool.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2181F6CF15BBE1CD00EF78D2 /* ThreadPool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2181F70315BBE1CE00EF78D2 /* Build configuration list for PBXNativeTarget "ThreadPool" */;
+			buildPhases = (
+				2181F6CC15BBE1CD00EF78D2 /* Sources */,
+				2181F6CD15BBE1CD00EF78D2 /* Frameworks */,
+				2181F6CE15BBE1CD00EF78D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreadPool;
+			productName = ThreadPool;
+			productReference = 2181F6D015BBE1CD00EF78D2 /* ThreadPool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2181F6F015BBE1CE00EF78D2 /* ThreadPoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2181F70615BBE1CE00EF78D2 /* Build configuration list for PBXNativeTarget "ThreadPoolTests" */;
+			buildPhases = (
+				2181F6EC15BBE1CE00EF78D2 /* Sources */,
+				2181F6ED15BBE1CE00EF78D2 /* Frameworks */,
+				2181F6EE15BBE1CE00EF78D2 /* Resources */,
+				2181F6EF15BBE1CE00EF78D2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2181F6F715BBE1CE00EF78D2 /* PBXTargetDependency */,
+			);
+			name = ThreadPoolTests;
+			productName = ThreadPoolTests;
+			productReference = 2181F6F115BBE1CE00EF78D2 /* ThreadPoolTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2181F6C715BBE1CD00EF78D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ThreadPool;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2181F6CA15BBE1CD00EF78D2 /* Build configuration list for PBXProject "ThreadPool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2181F6C515BBE1CD00EF78D2;
+			productRefGroup = 2181F6D115BBE1CD00EF78D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2181F6CF15BBE1CD00EF78D2 /* ThreadPool */,
+				2181F6F015BBE1CE00EF78D2 /* ThreadPoolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2181F6CE15BBE1CD00EF78D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F6DF15BBE1CD00EF78D2 /* InfoPlist.strings in Resources */,
+				2181F6EB15BBE1CD00EF78D2 /* ThreadPoolViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2181F6EE15BBE1CE00EF78D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F6FD15BBE1CE00EF78D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2181F6EF15BBE1CE00EF78D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2181F6CC15BBE1CD00EF78D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F6E115BBE1CD00EF78D2 /* main.m in Sources */,
+				2181F6E515BBE1CD00EF78D2 /* ThreadPoolAppDelegate.m in Sources */,
+				2181F6E815BBE1CD00EF78D2 /* ThreadPoolViewController.m in Sources */,
+				2181F71115BBE34400EF78D2 /* ThreadPool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2181F6EC15BBE1CE00EF78D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2181F70015BBE1CE00EF78D2 /* ThreadPoolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2181F6F715BBE1CE00EF78D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2181F6CF15BBE1CD00EF78D2 /* ThreadPool */;
+			targetProxy = 2181F6F615BBE1CE00EF78D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2181F6DD15BBE1CD00EF78D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2181F6DE15BBE1CD00EF78D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2181F6E915BBE1CD00EF78D2 /* ThreadPoolViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2181F6EA15BBE1CD00EF78D2 /* en */,
+			);
+			name = ThreadPoolViewController.xib;
+			sourceTree = "<group>";
+		};
+		2181F6FB15BBE1CE00EF78D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2181F6FC15BBE1CE00EF78D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2181F70115BBE1CE00EF78D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2181F70215BBE1CE00EF78D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2181F70415BBE1CE00EF78D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThreadPool/ThreadPool-Prefix.pch";
+				INFOPLIST_FILE = "ThreadPool/ThreadPool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2181F70515BBE1CE00EF78D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThreadPool/ThreadPool-Prefix.pch";
+				INFOPLIST_FILE = "ThreadPool/ThreadPool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2181F70715BBE1CE00EF78D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThreadPool.app/ThreadPool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThreadPool/ThreadPool-Prefix.pch";
+				INFOPLIST_FILE = "ThreadPoolTests/ThreadPoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2181F70815BBE1CE00EF78D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThreadPool.app/ThreadPool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThreadPool/ThreadPool-Prefix.pch";
+				INFOPLIST_FILE = "ThreadPoolTests/ThreadPoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2181F6CA15BBE1CD00EF78D2 /* Build configuration list for PBXProject "ThreadPool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2181F70115BBE1CE00EF78D2 /* Debug */,
+				2181F70215BBE1CE00EF78D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2181F70315BBE1CE00EF78D2 /* Build configuration list for PBXNativeTarget "ThreadPool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2181F70415BBE1CE00EF78D2 /* Debug */,
+				2181F70515BBE1CE00EF78D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2181F70615BBE1CE00EF78D2 /* Build configuration list for PBXNativeTarget "ThreadPoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2181F70715BBE1CE00EF78D2 /* Debug */,
+				2181F70815BBE1CE00EF78D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2181F6C715BBE1CD00EF78D2 /* Project object */;
+}
