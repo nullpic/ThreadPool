@@ -11,7 +11,6 @@ You could push threads to ThreadPool, and then it will process the thread.
 
 ```objective-c
 ThreadPool *pool = [ThreadPool new];
-pool.maxThreadNumber = 2;
 
 NSThread *thread = [[NSThread alloc] initWithTarget:self
                                            selector:@selector(threadExecuteCode)
