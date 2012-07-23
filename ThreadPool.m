@@ -12,8 +12,15 @@
 #pragma mark - ThreadPool
 @implementation ThreadPool
 
+#pragma mark - Property
 @synthesize poolType = _poolType;
 @synthesize maxThreadNumber = _maxThreadNumber;
+@synthesize delegate = _delegate;
+- (BOOL)isPoolCleared
+{
+    return [_poolExecute count] + [_poolQueue count] == 0;
+}
+
 
 static ThreadPool *instance;
 
@@ -98,6 +105,12 @@ static ThreadPool *instance;
     if ([_poolQueue count] + [_poolExecute count] == 0) {
         [_timer invalidate];
         _timer = nil;
+        if (_delegate) {
+            SEL selector = sel_getUid("poolCleared:");
+            [(NSObject *)_delegate performSelectorOnMainThread:selector
+                                                    withObject:self
+                                                 waitUntilDone:false];
+        }
     }
 }
 
