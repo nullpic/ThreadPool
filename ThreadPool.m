@@ -106,8 +106,7 @@ static ThreadPool *instance;
         [_timer invalidate];
         _timer = nil;
         if (_delegate) {
-            SEL selector = sel_getUid("poolCleared:");
-            [(NSObject *)_delegate performSelectorOnMainThread:selector
+            [(NSObject *)_delegate performSelectorOnMainThread:@selector(poolCleared:)
                                                     withObject:self
                                                  waitUntilDone:false];
         }
