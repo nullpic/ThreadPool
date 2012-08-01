@@ -13,7 +13,6 @@
 @implementation ThreadPool
 
 #pragma mark - Property
-@synthesize poolType = _poolType;
 @synthesize maxThreadNumber = _maxThreadNumber;
 @synthesize delegate = _delegate;
 - (BOOL)isPoolCleared
@@ -42,7 +41,6 @@ static ThreadPool *instance;
     if (self) {
         _poolQueue = [NSMutableArray new];
         _poolExecute = [NSMutableArray new];
-        _poolType = ThreadPoolQueue;
         _maxThreadNumber = 1;
     }
     return self;
@@ -51,8 +49,12 @@ static ThreadPool *instance;
 #pragma mark push a thread
 - (void)pushThread:(NSThread *)thread
 {
-    switch (_poolType) {
-        case ThreadPoolCancelNew:
+    [self pushThread:thread threadPoolType:ThreadPoolQueue];
+}
+- (void)pushThread:(NSThread *)thread threadPoolType:(ThreadPoolType)threadPoolType
+{
+    switch (threadPoolType) {
+        case ThreadPoolCancelThis:
             // cancel the new thread
             if ([_poolExecute count] == 0 && [_poolQueue count] == 0) {
                 [_poolQueue addObject:thread];

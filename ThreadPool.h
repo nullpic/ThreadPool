@@ -13,7 +13,7 @@
 enum {
     ThreadPoolQueue = 0,
     ThreadPoolCancelBefore,
-    ThreadPoolCancelNew
+    ThreadPoolCancelThis
 };
 typedef NSUInteger ThreadPoolType;
 
@@ -31,13 +31,13 @@ typedef NSUInteger ThreadPoolType;
     NSTimer *_timer;
 }
 
-@property ThreadPoolType poolType;
 @property int maxThreadNumber;
 @property (strong) id<ThreadPoolDelegate> delegate;
 @property (readonly) BOOL isPoolCleared;
 
 + (id)sharedInstance;
 - (void)pushThread:(NSThread *)thread;
+- (void)pushThread:(NSThread *)thread threadPoolType:(ThreadPoolType)threadPoolType;
 
 
 @end
