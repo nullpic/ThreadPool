@@ -38,6 +38,8 @@ typedef NSUInteger ThreadPoolType;
 + (id)sharedInstance;
 - (void)pushThread:(NSThread *)thread;
 - (void)pushThread:(NSThread *)thread threadPoolType:(ThreadPoolType)threadPoolType;
-
+ 
+- (void)cancelAllthreadsInExecutePool;
+- (void)cancelAllThreads;
 
 @end

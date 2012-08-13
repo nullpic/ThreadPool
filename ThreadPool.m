@@ -63,7 +63,7 @@ static ThreadPool *instance;
         case ThreadPoolCancelBefore:
             // cancel threads in pool and run the new thread
             [_poolQueue removeAllObjects];
-            [self cancelAllthreadInExecutePool];
+            [self cancelAllthreadsInExecutePool];
             [_poolQueue addObject:thread];
             break;
         case ThreadPoolQueue:
@@ -83,6 +83,7 @@ static ThreadPool *instance;
     }
 }
 
+#pragma mark thread managementor
 - (void)checkThread:(NSTimer *)timer
 {
     // check execute pool
@@ -115,11 +116,17 @@ static ThreadPool *instance;
     }
 }
 
-- (void)cancelAllthreadInExecutePool
+#pragma mark cancel thread
+- (void)cancelAllthreadsInExecutePool
 {
     for (NSThread *thread in _poolExecute) {
         [thread cancel];
     }
+}
+- (void)cancelAllThreads
+{
+    [_poolQueue removeAllObjects];
+    [self cancelAllthreadsInExecutePool];
 }
 
 @end
